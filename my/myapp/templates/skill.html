@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>技能信息</title>
+</head>
+<body>
+    <h1>技能列表</h1>
+    <h5>技能名称*****************伤害*******************攻击种类</h5>
+    <ul>
+        {% for s in skill %}
+        <li>
+        {{ s.sname }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp{{ s.sshnaghai }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ s.ssort }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

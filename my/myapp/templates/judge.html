@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录结果</title>
+</head>
+<body>
+    你的登录结果为:{{ Ok_or_Not }}!!  </br>  </br>
+    {% if  P %}
+        </br>
+       <form action="http://127.0.0.1:8000/showmain/" method="post">
+         你输入的账号名为：<input type="text" value="填写你的昵称" name="username">
+       <input type="submit" value="点击继续">
+        </form>
+        </br>
+        {% else %}
+         </br>
+        <a href="http://127.0.0.1:8000/main/login">密码错误，点击重新尝试</a>
+    {% endif %}
+</body>
+</html>

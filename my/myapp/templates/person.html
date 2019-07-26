@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人物信息</title>
+</head>
+<body>
+    <H1>人物列表如下</H1>
+    <ul>
+    <h5>名字*****************年龄*******************描述</h5>
+        {% for p in person %}
+            </br><a href="{{ p.id }}">{{ p.pname }}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp{{ p.page }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ p.pcontend }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
