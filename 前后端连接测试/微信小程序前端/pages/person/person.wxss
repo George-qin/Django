@@ -1,0 +1,31 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50rpx;
+  color: darkorchid;
+  font-weight: 900;
+  font-style: oblique;
+  margin-bottom: 50rpx;
+}
+
+.return_main {
+  margin-top: 200rpx;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200rpx;
+}
+.result{
+  margin-top: 100rpx;
+  font-size:50rpx;
+  color: red;
+}
+.go{
+  display: flex;
+  flex-direction: column;
+  color: darkslateblue;
+  font-size: 52rpx;
+}

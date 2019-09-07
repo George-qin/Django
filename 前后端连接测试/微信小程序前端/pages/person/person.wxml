@@ -1,0 +1,32 @@
+<view class="top">
+  <text>这里是个人信息主页</text>
+</view>
+
+<view class="go">
+
+  <view class="user">
+    <text>用户名：{{Username}}</text>
+  </view>
+  <view>
+    <text>年龄：{{Age}}</text>
+  </view>
+  <view>
+    <text>性别：{{Sex}}</text>
+  </view>
+  <view>
+    <text>电话号码：{{Number}}</text>
+  </view>
+  <view>
+    <text>个人描述：{{Content}}</text>
+  </view>
+</view>
+<form bindsubmit="submit" class="form">
+  请输入要查询的用户名
+  <input type="primary" name="User" />
+  <button form-type="submit" type="primary"> 提交命令</button>
+</form>
+<view class='result'>
+
+  <text>{{result}}</text>
+</view>
+<button type="warn" bindtap="main" class="return_main">返回功能主页</button>

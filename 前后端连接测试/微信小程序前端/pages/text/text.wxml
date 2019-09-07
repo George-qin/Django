@@ -1,0 +1,13 @@
+<button class='register' bindtap='register' type='primary'>没有账号？点击注册</button>
+
+<form bindsubmit='formsubmit'>
+  账号：
+  <input name="name" type='text' /> 密码
+  <input name='password' type='password' />
+
+  <button form-type='submit' type='primary'>登录</button>
+
+</form>
+<view class='result'>
+  <text>登录结果：{{result}}</text>
+</view>

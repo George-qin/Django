@@ -1,0 +1,110 @@
+// pages/person/person.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    'Username': '',
+    'Age': '',
+    'Sex': '',
+    'Number': '',
+    'Content': '',
+    'result':''
+
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+
+  submit: function (e) {
+    wx.request({
+      url: 'http://127.0.0.1:8000/person/',
+      data:{
+        'user': e.detail.value.User
+      },
+       header: {
+        "content-type": "application/x-www-form-urlencoded"		//使用POST方法要带上这个header
+      },
+      method: 'POST'
+      ,
+      success: res => {
+        if (res.statusCode == 200) {
+          this.setData({
+            'Username': res.data.UserName,
+            'Age': res.data.Age,
+            'Sex': res.data.Sex,
+            'Number': res.data.Number,
+            'Content': res.data.Content,
+            'result': res.data,
+          })
+          console.log(res.data)
+        }
+
+      }
+
+    })
+
+  },
+
+  main: function (e) {
+    wx.navigateTo({
+      url: '../main/main',
+    })
+  },
+
+
+
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

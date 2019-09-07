@@ -1,0 +1,26 @@
+<!--pages/weather/weather.wxml-->
+<view>
+<form bindsubmit="formsubmit" class="submit">
+  输入日期（格式20190906）:
+  <input name='day' type=' text ' /> 
+  输入城市（拼音）:
+  <input name='city' type='text' />
+  <button type="primary" form-type="submit">查询</button>
+</form>
+</view>
+
+<view class="top">
+  <text>天气查询页面</text>
+</view>
+<view>
+  <view class="weather">
+    <text>天气:{{weather}}</text>
+  </view>
+  <view class="temperature">
+    <text>气温:{{temperature_hight}}***到****{{temperature_low}}</text>
+  </view>
+  <view class="wind">
+    <text>风速:{{wind}}</text>
+  </view>
+</view>
+  <button type="warn" bindtap="main" class='bottom'>返回功能主页</button>

@@ -1,0 +1,42 @@
+/* pages/weather/weather.wxss */
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 50rpx;
+  color: darkorchid;
+  font-weight: 900;
+  font-style: oblique;
+  margin-bottom: 10rpx;
+}
+
+.bottom {
+  margin-top: 420rpx;
+}
+.weather {
+  display: flex;
+  flex-direction: column;
+  font-size: 50rpx;
+  color: yellowgreen;
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column;
+  font-size: 50rpx;
+  color: cadetblue;
+}
+
+.wind {
+  display: flex;
+  flex-direction: column;
+  font-size: 50rpx;
+  color: cadetblue;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 200rpx;
+}

@@ -1,0 +1,15 @@
+/* pages/register/register.wxss */
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60rpx;
+  color:green;
+
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60rpx;
+}

@@ -1,0 +1,21 @@
+<view class="top">
+  <text>留言墙</text>
+</view>
+
+<form bindsubmit="subumit">
+  留言：
+  <input placeholder="输入你的留言" auto-focus name='saying' />
+
+  <view class="name">
+    名字：
+    <input placeholder="留下你的名字" auto-focus name='name' />
+  </view>
+  <button form-type="submit" type="primary" class="button">保存留言</button>
+</form>
+<view class="imformations">
+  <text>留言墙如下</text>
+</view>
+<view>
+<text>{{id}}楼：</text>
+<text>{{imformation}}</text>
+</view>

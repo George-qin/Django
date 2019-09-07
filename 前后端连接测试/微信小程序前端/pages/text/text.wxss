@@ -1,0 +1,11 @@
+/* pages/text/text.wxss */
+.register{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100rpx;
+}
+.result{
+  margin-top: 100rpx;
+  font-size: 50rpx;
+  color:rebeccapurple;
+}

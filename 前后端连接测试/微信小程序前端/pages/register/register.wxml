@@ -1,0 +1,24 @@
+<!--pages/register/register.wxml-->
+<view class='title'>
+  <text>这里是注册页面</text>
+</view>
+
+<form bindsubmit='formsubmit'>
+  请输入账号:
+  <input  name='name'  type=' text '/> 
+  请输入密码:
+  <input   name='password' type='password' />
+  性别:
+  <input   name='Sex' type='text' />
+  年龄:
+  <input   name='Age' type='text' />
+  电话号码:
+  <input   name='Number' type='text' />
+  个人描述:
+  <input   name='Content' type='text' />
+
+  <button form-type='submit' >注册</button>
+</form>
+<text>注册结果：{{result}}</text>
+<button bindtap="go_to_text">返回主页</button>
+  

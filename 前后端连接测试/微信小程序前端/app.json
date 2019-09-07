@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/text/text",
+    "pages/register/register",
+    "pages/main/main",
+    "pages/person/person",
+    "pages/weather/weather",
+    "pages/kuaidi/kuaidi",
+    "pages/kefu/kefu",
+    "pages/liuyan/liuyan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
